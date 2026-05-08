@@ -1,17 +1,21 @@
 # 🌤️ ClimApp-Analytics-Pro
 
-> API REST de clima en tiempo real para España. Datos oficiales de AEMET, geolocalización automática.
+API REST de clima en tiempo real para España. Datos oficiales de AEMET, geolocalización automática.
 
 ---
 
-## 🚀 Uso Rápido
+## ⚡ Inicio Rápido
 
 ```bash
-# Iniciar servidor
-python app.py
+# Instalar dependencias
+pip install -r requirements.txt
 
-# Endpoints base
-http://localhost:5000
+# Configurar variables de entorno (.env)
+AEMET_API_KEY=tu_api_key
+SECRET_KEY=tu_clave
+
+# Ejecutar
+python app.py
 ```
 
 ---
@@ -19,31 +23,59 @@ http://localhost:5000
 ## 📡 API Endpoints
 
 | Endpoint | Descripción | Ejemplo |
-|----------|--------------|---------|
+|----------|-------------|---------|
 | `/api/clima` | Clima por coordenadas o IP | `?lat=40.41&lon=-3.70` |
 | `/api/clima/<ciudad>` | Clima por ciudad | `/api/clima/Madrid` |
 | `/api/geo/<ciudad>` | Geocodificar ciudad | `/api/geo/Barcelona` |
 | `/api/health` | Estado del servidor | - |
-| `/api/alertas` | Configuración de alertas | - |
+| `/api/stats` | Estadísticas | - |
+| `/api/alertas` | Configuración alertas | - |
 
 ---
 
-## 📋 Características
+## ✨ Características
 
-- **Datos oficiales**: AEMET OpenData (85+ estaciones)
-- **Geolocalización**: IP automática + Nominatim
-- **Alertas**: Configurables desde JSON
-- **Rate Limiting**: 30 req/min protección
-- **Caché**: 30 minutos offline
+- **Datos oficiales**: AEMET OpenData (85+ estaciones meteorológicas)
+- **Geolocalización automática**: IP-API.com + Nominatim
+- **Alertas configurables**: 6 niveles (extremo, alto, medio)
+- **Rate Limiting**: 30 req/min para /clima, 10 req/min para /geo
+- **Caché offline**: 30 minutos
+- **Búsqueda de estación**: Haversine hasta 50km
 
 ---
 
-## ⚙️ Configuración
+## 🔧 Configuración
 
-Crear `.env`:
+Variables de entorno en `.env`:
 ```
-AEMET_API_KEY=tu_api_key_aemet
-SECRET_KEY=clave_secreta
+AEMET_API_KEY=          # Clave de AEMET OpenData
+SECRET_KEY=             # Clave secreta Flask
+AEMET_TIMEOUT=20       # Timeout en segundos
+```
+
+---
+
+## 🧪 Tests
+
+```bash
+pytest tests/ -v
+```
+
+---
+
+## 📂 Estructura
+
+```
+ClimApp-Analytics-Pro/
+├── app.py                 # Gateway principal
+├── services/             # Lógica de negocio
+├── controllers/           # Controladores Flask
+├── repositories/         # Persistencia
+├── models/                # Modelos de datos
+├── templates/             # Plantillas HTML
+├── static/                # CSS, JS
+├── config/                # Configuración
+└── tests/                 # Tests
 ```
 
 ---
