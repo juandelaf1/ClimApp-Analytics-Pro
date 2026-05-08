@@ -318,6 +318,12 @@ def index():
     return render_template("index.html")
 
 
+@app.route("/dashboard")
+def dashboard():
+    """Dashboard analytics."""
+    return render_template("dashboard.html")
+
+
 # ==== ERROR HANDLERS ====
 
 @app.errorhandler(404)
