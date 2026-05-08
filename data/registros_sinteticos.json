@@ -1,0 +1,112 @@
+[
+    {
+        "estacion_id": "EST-7473",
+        "fecha": "07/05/2026",
+        "temperatura": 8.4,
+        "humedad": 39,
+        "viento": 13.4,
+        "lluvia": 9.3,
+        "fuente": "synthetic",
+        "municipio": "Madrid",
+        "ciudad": "Madrid-Cuarteles"
+    },
+    {
+        "estacion_id": "EST-8063",
+        "fecha": "07/05/2026",
+        "temperatura": -0.6,
+        "humedad": 95,
+        "viento": 1.6,
+        "lluvia": 7.5,
+        "fuente": "synthetic",
+        "municipio": "Fuenlabrada",
+        "ciudad": "Madrid-Cuarteles"
+    },
+    {
+        "estacion_id": "EST-3498",
+        "fecha": "07/05/2026",
+        "temperatura": 16.8,
+        "humedad": 26,
+        "viento": 3.0,
+        "lluvia": 1.6,
+        "fuente": "synthetic",
+        "municipio": "Madrid",
+        "ciudad": "Tres Cantos"
+    },
+    {
+        "estacion_id": "EST-6684",
+        "fecha": "07/05/2026",
+        "temperatura": 14.8,
+        "humedad": 88,
+        "viento": 47.4,
+        "lluvia": 19.9,
+        "fuente": "synthetic",
+        "municipio": "Fuenlabrada",
+        "ciudad": "Madrid-Cuarteles"
+    },
+    {
+        "estacion_id": "EST-4258",
+        "fecha": "07/05/2026",
+        "temperatura": 2.3,
+        "humedad": 34,
+        "viento": 30.1,
+        "lluvia": 8.8,
+        "fuente": "synthetic",
+        "municipio": "Alcalá de Henares",
+        "ciudad": "Barajas"
+    },
+    {
+        "estacion_id": "EST-3594",
+        "fecha": "07/05/2026",
+        "temperatura": 26.7,
+        "humedad": 53,
+        "viento": 3.9,
+        "lluvia": 18.3,
+        "fuente": "synthetic",
+        "municipio": "Alcalá de Henares",
+        "ciudad": "Tres Cantos"
+    },
+    {
+        "estacion_id": "EST-1224",
+        "fecha": "07/05/2026",
+        "temperatura": 26.4,
+        "humedad": 90,
+        "viento": 36.0,
+        "lluvia": 6.9,
+        "fuente": "synthetic",
+        "municipio": "Getafe",
+        "ciudad": "Madrid-Cuarteles"
+    },
+    {
+        "estacion_id": "EST-6591",
+        "fecha": "07/05/2026",
+        "temperatura": 19.7,
+        "humedad": 68,
+        "viento": 48.3,
+        "lluvia": 3.0,
+        "fuente": "synthetic",
+        "municipio": "Fuenlabrada",
+        "ciudad": "Madrid-Cuarteles"
+    },
+    {
+        "estacion_id": "EST-3097",
+        "fecha": "07/05/2026",
+        "temperatura": 36.9,
+        "humedad": 95,
+        "viento": 26.0,
+        "lluvia": 5.2,
+        "fuente": "synthetic",
+        "municipio": "Alcalá de Henares",
+        "ciudad": "Collado Villalb"
+    },
+    {
+        "estacion_id": "EST-7209",
+        "fecha": "07/05/2026",
+        "temperatura": 33.9,
+        "humedad": 73,
+        "viento": 7.2,
+        "lluvia": 11.0,
+        "fuente": "synthetic",
+        "municipio": "Alcalá de Henares",
+        "ciudad": "Alcala de Henares"
+    }
+]
