@@ -1,38 +1,28 @@
-# Variables de entorno
-.env
-
-# Entornos virtuales
-.venv/
-venv/
-env/
-
-# Python
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
-
-# Logs
-logs/
-*.log
-
-# Test cache
-.pytest_cache/
-
-# IDEs / editores
-.vscode/
-.idea/
-
-# Sistema operativo
-.DS_Store
-Thumbs.db
-
-# Base de datos
+*.py[cod]
 *.db
 *.sqlite
-
-# Data files (registros climáticos pueden contener info sensible)
-data/*.json
-!data/.gitkeep
-
-# Añadir lo que sea
+*.sqlite3
+.env
+.venv/
+venv/
+venv37/
+.idea/
+.vscode/
+*.egg-info/
+dist/
+build/
+htmlcov/
+.coverage
+.pytest_cache/
+data/
+logs/
+*.log
+node_modules/
+.DS_Store
+clima_local.db
+skycast.db
+static/
+templates/
+legacy/
+__pypackages__/
